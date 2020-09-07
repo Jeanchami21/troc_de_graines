@@ -1,0 +1,67 @@
+body {
+    font-family: 'Halant', serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Satisfy', cursive;
+    font-weight: 400;
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.logo {
+    height: 80px;
+    font-size: 30px;
+    margin-top: 1em;
+}
+.slogan {
+    color: #DD7564;
+    display: block;
+    font-size: 21px;
+    font-family: 'Satisfy', cursive;
+    font-weight: 400;
+   
+}
+
+.color-green {
+
+    background-color: #1FA5A6;
+    color: white;
+    width: 10em;
+    
+}
+.connexion {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.navbar {
+    height: 55px;
+    margin-top: 2em;
+}
+
+.letter {
+    font-size: 22px;
+    font-family: 'Satisfy', cursive;
+    letter-spacing: 4px;
+    
+}
+
+.introduction {
+text-align: center;
+}
+
+.is-grouped  {
+    width: 17em;
+    margin: auto;
+    
+}
