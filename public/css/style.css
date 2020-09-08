@@ -1,6 +1,7 @@
 body {
     font-family: 'Halant', serif;
     font-weight: 400;
+    
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,15 +17,30 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 3px;
 }
 .seed-of-life {
-    margin-top: 5px;
-    width: 40px;
-    height: 40px;
+    margin-top: 8px;
+    margin-left: 8px;
+    width: 32px;
+    height: 32px;
     
+    
+}
+.seed-of-life:hover{
+    background-color: #B2DEDD;
+    border-radius: 50%;
 }
 .logo {
     height: 80px;
     font-size: 30px;
     margin-top: 1em;
+}
+.link-logo {
+    text-decoration: none;
+     color: black;
+     
+}
+.link-logo:hover {
+    text-decoration: none;
+    color: black;
 }
 .slogan {
     color: #DD7564;
@@ -32,9 +48,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 21px;
     font-family: 'Satisfy', cursive;
     font-weight: 400;
+    width: 200px;
+   
    
 }
-
+.connexion {
+   text-decoration: none;
+}
 .color-green {
 
     background-color: #1FA5A6;
