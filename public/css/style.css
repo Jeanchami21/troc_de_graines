@@ -103,3 +103,17 @@ h1, h2, h3, h4, h5, h6 {
     height: 5em;
 }
 
+.alphabet {
+    font-size: 16px;
+    color:black;
+    font-family: 'Satisfy', cursive;
+    font-weight: 400;
+}
+
+.alphabet:hover {
+    color: #DD7564;
+}
+
+.columns.is-multiline {
+    justify-content: center;
+}

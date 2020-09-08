@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <title>Kupali -{% block title %}{% endblock %}</title>
-    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Halant|Montserrat:700|Satisfy" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -15,12 +15,13 @@
     {% block stylesheets %}{% endblock %}
   </head>
     <body>
-
+      <div class="container">
     {% include 'partials/header.html.twig' %}
         
     {% block body %}{% endblock %}
-    
+    </div>
     {% include "partials/footer.html.twig" %}
+    
     </body>
 </html> 
 
