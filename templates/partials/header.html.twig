@@ -44,15 +44,12 @@
         </div>
     </nav>
     <div class="alphabetic-letter has-text-centered mt-3">
-        
-
-         {% for letter in 'a'..'z'  %}
-            {{letter}}
-         {% endfor %}
-        
-    </div>
-</div>
-   
+         
+        {# Dans ta vue Twig #}
+        {% for letter in 'a'..'z' %}
+            <a class="alphabet" href="{{ path('alphabetical_pagination', {'letter' : letter}) }}">{{ letter|upper }}</a>
+        {% endfor %}
+ </div> 
 {% block javascripts %}
 
 <script src="js/main.js"></script>

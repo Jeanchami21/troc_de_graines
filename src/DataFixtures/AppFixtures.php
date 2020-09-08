@@ -28,7 +28,7 @@ class AppFixtures extends Fixture
                     ->setImage($image)
                     ->setLotIndicatif(mt_rand(40, 200));
                    
-
+           
         
             $manager->persist($variete);
                 
