@@ -2,11 +2,13 @@
 
 namespace App\Entity;
 
-use App\Repository\VarieteRepository;
+use Cocur\Slugify\Slugify;
 use Doctrine\ORM\Mapping as ORM;
+use App\Repository\VarieteRepository;
 
 /**
  * @ORM\Entity(repositoryClass=VarieteRepository::class)
+ * @ORM\HasLifecycleCallbacks
  */
 class Variete
 {
@@ -28,7 +30,7 @@ class Variete
     private $description;
 
     /**
-     * @ORM\ManyToOne(targetEntity=espece::class, inversedBy="varietes")
+     * @ORM\ManyToOne(targetEntity=Espece::class, inversedBy="varietes")
      */
     private $espece;
 
@@ -46,6 +48,22 @@ class Variete
      * @ORM\Column(type="string", length=255)
      */
     private $slug;
+
+    /**
+     * Permet d'initialiser le slug
+     *
+     * @ORM\PrePersist
+     * @ORM\PreUpdate
+     * 
+     * @return void
+     */
+    public function initializeSlug() {
+        if (empty($this->slug)) {
+            $slugify = new Slugify();
+            $this->slug = $slugify->slugify($this->nom);
+        }
+    }
+
 
     public function getId(): ?int
     {

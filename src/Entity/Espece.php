@@ -35,7 +35,7 @@ class Espece
     private $genre;
 
     /**
-     * @ORM\ManyToOne(targetEntity=famille::class, inversedBy="especes")
+     * @ORM\ManyToOne(targetEntity=Famille::class, inversedBy="especes")
      */
     private $famille;
 
