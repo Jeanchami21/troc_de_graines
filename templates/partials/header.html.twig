@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="logo">Kupali<span class="slogan">Le temps que ça pousse</span>
+    </div>
+    <nav class="navbar mt-5" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="true" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="{{ path('home') }}">
+                    <img class="seed-of-life" src="https://img.icons8.com/carbon-copy/100/000000/seed-of-life.png"/>
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                
+                    <a class="navbar-link">
+                    Nos Graines
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                        Par famille
+                        </a>
+                        <a class="navbar-item">
+                        Par Genre
+                        </a>
+                        <a class="navbar-item">
+                        Par Espèce
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button color-green">
+                            <strong class="connexion">Connexion</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="alphabetic-letter has-text-centered mt-3">
+        
+
+         {% for letter in 'a'..'z'  %}
+            {{letter}}
+         {% endfor %}
+        
+    </div>
+</div>
+   
+{% block javascripts %}
+
+<script src="js/main.js"></script>
+{% endblock %}

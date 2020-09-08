@@ -5,16 +5,14 @@
 {% block body %}
 <div class="container">
     <p class="introduction mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste officia non alias assumenda repellat. Sed neque officiis magni soluta, nobis, voluptate ipsum quae repellat itaque adipisci consectetur ducimus labore, repudiandae eos quis quo voluptatem expedita! Fugit tenetur et voluptatum distinctio quo maiores quos consequuntur. Laboriosam sapiente atque aliquid ea quis, praesentium sequi nulla ut, officia est, in nobis labore! Quae quos numquam dignissimos eius dolorem et unde? Temporibus, quaerat et.</p>
-    <div class="field is-grouped mt-5">
-        <p class="control is-expanded">
-            <input class="input" type="text" placeholder="Find a repository">
-        </p>
-        <p class="control">
-            <a class="button is-info">
-            Search
-            </a>
-        </p>
-    </div>
+
+    <form class="form-inline justify-content-center search-bar">
+        <input class="form-control mr-sm-0 left" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-2 right" type="submit">Rechercher</button>
+    </form>
 </div>
+
+
+                   
 
 {% endblock %}
