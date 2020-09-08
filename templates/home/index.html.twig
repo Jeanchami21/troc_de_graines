@@ -6,7 +6,7 @@
 
     <p class="introduction mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste officia non alias assumenda repellat. Sed neque officiis magni soluta, nobis, voluptate ipsum quae repellat itaque adipisci consectetur ducimus labore, repudiandae eos quis quo voluptatem expedita! Fugit tenetur et voluptatum distinctio quo maiores quos consequuntur. Laboriosam sapiente atque aliquid ea quis, praesentium sequi nulla ut, officia est, in nobis labore! Quae quos numquam dignissimos eius dolorem et unde? Temporibus, quaerat et.</p>
 
-    <form class="form-inline justify-content-center search-bar">
+    <form class="form-inline justify-content-center search-bar mt-5">
         <input class="form-control mr-sm-0 left" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-2 right" type="submit">Rechercher</button>
     </form>
@@ -14,14 +14,15 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" rel="stylesheet" />
 
     
-        {% for i in 0..2 %}
+        {% for i in 1..3 %}
             <div class='columns aa is-multiline mt-5'>
-                {% for i in 0..8 %}
+                {% for j in 0..8 %}
                     <div class='column is-1'>
                         <figure class="image is-48x48">
-                            <img  class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png" alt="Placeholder image">
+                           <a href=""><img  class="is-rounded" src="{{ varietes[i*j].image }}" alt="Placeholder image"></a> 
                         </figure>
                     </div>
+                   
                 {% endfor %}
             </div>
         {% endfor %}
