@@ -1,7 +1,22 @@
-{# alphabetical_pagination = nom de la route dans le fichier contrôleur #}
-{# 'letter' : letter = le 1er est l'argument que tu passes à l'url, le 2ème est l'index de la lettre courante dans ta boucle #}
-{# letter|upper = la lettre courante en majuscule #}
-<p>Lettre cliquée :{{ clickedLetter|upper }}</p>
-{# La lettre cliquée (renvoyée par le contrôleur) en majuscule #}
-    </div>
+{% extends 'base.html.twig' %}
+
+{% block title %}Le Troc de Graines{% endblock %}
+
+{% block body %}
+
+<span class="big-letter">{{ clickedLetter|upper }}</span>
+
+<div class="columns">
+      
+    {% for i in 0..2 %}
+        <div class="column is-3">
+            <ul>
+            {% for variete in varietes %}
+                    <li><a href="">{{ variete.nom }}</a></li>
+            {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}
 </div>
+{% endblock %}
+    

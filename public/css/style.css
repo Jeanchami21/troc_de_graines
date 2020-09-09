@@ -17,8 +17,8 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 3px;
 }
 .seed-of-life {
-    margin-top: 6px;
-    margin-left: 8px;
+    margin-top: 1em;
+   
     width: 33px;
     height: 33px;
     
@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #B2DEDD;
     opacity: 0.6;
     border-radius: 50%;
+   
 }
 .logo {
     height: 80px;
@@ -37,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 .link-logo {
     text-decoration: none;
      color: black;
-     
+     margin-top: 1em;
 }
 .link-logo:hover {
     text-decoration: none;
@@ -53,22 +54,14 @@ h1, h2, h3, h4, h5, h6 {
    
    
 }
-.connexion {
-   text-decoration: none;
-}
-.color-green {
 
-    background-color: #1FA5A6;
-    color: white;
-    width: 10em;
-    
-}
 .connexion {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-family: 'Halant', serif;
+    font-weight: 400;
+  
     font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+   text-transform: lowercase;
+    letter-spacing: 2px;
    
 }
 
@@ -116,4 +109,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .columns.is-multiline {
     justify-content: center;
+}
+.le-jour {
+   width: 10em;
+   margin: auto;
+}
+
+.titre-jour {
+    font-size: 20px;
+    color: #DD7564;
+}
+
+.big-letter {
+    font-size: 30px;
 }

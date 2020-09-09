@@ -3,7 +3,7 @@
 {% block title %}Le Troc de Graines{% endblock %}
 
 {% block body %}
-
+<div class="container">
     <p class="introduction mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste officia non alias assumenda repellat. Sed neque officiis magni soluta, nobis, voluptate ipsum quae repellat itaque adipisci consectetur ducimus labore, repudiandae eos quis quo voluptatem expedita! Fugit tenetur et voluptatum distinctio quo maiores quos consequuntur. Laboriosam sapiente atque aliquid ea quis, praesentium sequi nulla ut, officia est, in nobis labore! Quae quos numquam dignissimos eius dolorem et unde? Temporibus, quaerat et.</p>
 
     <form class="form-inline justify-content-center search-bar mt-5">
@@ -15,18 +15,45 @@
 
     
         {% for i in 1..3 %}
-            <div class='columns aa is-multiline mt-5'>
-                {% for j in 0..8 %}
+            <div class='columns is-multiline mt-5'>
+                {% for i in 0..8 %}
                     <div class='column is-1'>
                         <figure class="image is-48x48">
-                           <a href=""><img  class="is-rounded" src="{{ varietes[i*j].image }}" alt="Placeholder image"></a> 
+                           <a href=""><img  class="is-rounded" src="{{ varietes[i].image }}" alt="Placeholder image"></a> 
                         </figure>
                     </div>
                    
                 {% endfor %}
             </div>
         {% endfor %}
-    
+        <div class="le-jour mt-5">
+            <h3 class="titre-jour">La Graine Du Jour</h3>
+            <figure class="image is-96x96 ml-4 mt-3">
+                <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+            </figure>
+        </div>
+        <div class="container">
+            <div class="columns mt-5">
+                <div class="column has-text-centered">
+                    <h4>Les dernières graines</h4>
+                    
+                        <ul>
+                        {% for variete in varietes %}
+                            <li><a href="">{{ variete.nom }}</a></li>
+                        </ul>
+                    {% endfor %}
+                </div>
+                <div class="column has-text-centered">
+                    <h4>Les graines les plus populaires</h4>
+                        <ul>
+                        {% for  variete in varietes %}
+                            <li><a href="">{{ variete.nom }}</a></li>
+                        </ul>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+</div>
 
 
 

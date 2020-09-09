@@ -30,6 +30,13 @@ class HomeController extends AbstractController
      */
     public function alphabeticalPagination($letter){
         // On retourne à la vue la lettre passée en paramètre (dans l'url, donc la lettre cliquée)
-        return $this->render('home/alphabetical_pagination.html.twig', ['clickedLetter' => $letter]);
+        $repo = $this->getDoctrine()->getRepository(Variete::class);
+
+        $varietes = $repo->findAll($letter);
+        return $this->render('home/alphabetical_pagination.html.twig', [
+            'clickedLetter' => $letter,
+            'varietes' => $varietes,
+            ]);
     }
+    
 }
